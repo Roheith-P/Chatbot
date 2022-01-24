@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div{
+            position: absolute;
+            right: 14cm;
+            bottom: 8cm;
+            color: gold;
+        }
+        body{
+            background-image: url(./backgr.jpg);
+        }
+        #text{
+            width: 250px;
+            text-align: center;
+            
+            font-size: large;
+            font-family: cursive;
+            text-decoration-color: blue;
+        }
+        #but{
+            height: 34px;
+            bottom: 34px;
+            font-family: cursive;
+            font-size: large;
+        }
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+</head>
+<body>
+    <div>
+    <H1 id="answer">Enter your Question</H1>
+    <input type="text" id="text" placeholder="Type your command">
+    <button id="but" style="color: blue;" onclick="script()">Ask</button>
+</div>
+<script>
+    let h = new Date()
+    let hour = h.getHours()
+    let min = h.getMinutes()
+    let sec = h.getSeconds()
+    let time = hour+":"+min+":"+sec;
+    function script(){
+       
+       if (document.getElementById("text").value == "hello"){
+        
+           document.getElementById("answer").innerHTML = "Hi Whats up";
+           
+       }else if (document.getElementById("text").value == "time"){
+            document.getElementById("answer").innerHTML = "See the clock";
+       }else if (document.getElementById("text").value == "code"){
+            document.getElementById("answer").innerHTML = "source code";
+       }
+       
+       else{
+           document.getElementById("answer").innerHTML = "Unable to Find Answer!!!"
+       }
+       
+    }
+</script>
+</body>
+</html>
