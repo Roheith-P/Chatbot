@@ -1,0 +1,23 @@
+div{
+    position: absolute;
+    right: 14cm;
+    bottom: 8cm;
+    color: gold;
+}
+body{
+    background-image: url(../assets/backgr.jpg);
+}
+#text{
+    width: 250px;
+    text-align: center;
+    
+    font-size: large;
+    font-family: cursive;
+    text-decoration-color: blue;
+}
+#but{
+    height: 34px;
+    bottom: 34px;
+    font-family: cursive;
+    font-size: large;
+}
